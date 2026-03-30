@@ -4262,6 +4262,11 @@ textarea.form-control-lg {
   margin-right: calc(-0.5 * var(--bs-card-cap-padding-x));
   margin-left: calc(-0.5 * var(--bs-card-cap-padding-x));
 }
+}
+.card-img-overlay {
+  pointer-events: none;
+}
+
 
 .card-img-overlay {
   position: absolute;
