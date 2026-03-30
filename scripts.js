@@ -26,7 +26,12 @@ window.addEventListener('DOMContentLoaded', event => {
     responsiveNavItems.map(function (responsiveNavItem) {
         responsiveNavItem.addEventListener('click', () => {
             if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
+               let navbar = document.querySelector('#navbarResponsive');
+let bsCollapse = bootstrap.Collapse.getInstance(navbar);
+
+if (bsCollapse) {
+  bsCollapse.hide();
+};
             }
         });
     });
